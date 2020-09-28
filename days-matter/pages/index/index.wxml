@@ -1,0 +1,27 @@
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="page__hd">
+    <view class="page__title">倒数日</view>
+    <view class="page__desc">目标日：晚于今天为倒数，早于今天为累计。</view>
+  </view>
+
+  <view class="page__bd">
+    <mp-cells title="今天是：{{today}}">
+      <block wx:for="{{list}}" wx:key="list">
+        <mp-cell>
+          <view>
+            <text class="title">{{item.desc}}</text>
+            <text>{{(item.days >= 0) ? "剩余" : "已过"}}</text>
+          </view>
+          <view style="font-size: 13px;color: #888888;">
+            <text>目标日：</text>
+            <text class="highlight">{{item.date}}</text>
+          </view>
+          <view slot="footer" class="key">{{(item.days >= 0) ? item.days : -item.days}}</view>
+        </mp-cell>
+      </block>
+    </mp-cells>
+  </view>
+  <view class="page__ft" bindtap="changeTheme">
+    <text>@ 2020 lewis</text>
+  </view>
+</view>
