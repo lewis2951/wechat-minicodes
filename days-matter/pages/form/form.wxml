@@ -1,0 +1,21 @@
+<mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+<view class="page" data-weui-theme="{{theme}}">
+  <mp-form-page title="设置目标" subtitle="">
+    <mp-form id="form">
+      <mp-cells title="" footer="">
+        <mp-cell prop="desc" title="描述" ext-class="">
+          <input bindinput="formInputChange" data-field="desc" class="weui-input" placeholder="目标描述，10字以内" />
+        </mp-cell>
+        <mp-cell prop="date" title="日期" ext-class="">
+          <picker data-field="date" mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+
+    <view slot="button">
+      <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+    </view>
+  </mp-form-page>
+</view>

@@ -1,10 +1,12 @@
 require('./libs/mixin/Mixins.js');
 
+const util = require('./utils/util');
 const themeListeners = [];
+const today = new Date();
 
 App({
     globalData: {
-        theme: 'light', // dark
+        theme: 'light', // dark | light
     },
     themeChanged(theme) {
         this.globalData.theme = theme;
@@ -23,4 +25,13 @@ App({
             themeListeners.splice(index, 1);
         }
     },
+    onLaunch: function () {
+        // 展示本地存储能力
+        var list = wx.getStorageSync('list') || [];
+        wx.setStorageSync('list', list)
+    },
+    globalData: {
+        today: util.formatTime(today),
+        list: wx.getStorageSync('list')
+    }
 });

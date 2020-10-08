@@ -16,7 +16,7 @@ const formatNumber = n => {
 }
 
 const days = (dateStart, dateEnd) => {
-  const start = new Date(formatTime(dateStart));
+  const start = new Date(dateStart);
   const end = new Date(dateEnd);
 
   return parseInt((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
