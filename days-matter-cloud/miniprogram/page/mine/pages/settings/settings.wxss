@@ -1,0 +1,16 @@
+.power {
+  width: 95%;
+  border-radius: 15rpx;
+}
+
+.line {
+  width: 95%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  width: 80%;
+}

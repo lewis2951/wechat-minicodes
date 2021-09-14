@@ -1,0 +1,24 @@
+page {
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.adContainer {
+  margin-top: 20rpx;
+  width: 100%;
+}

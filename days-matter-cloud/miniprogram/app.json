@@ -1,0 +1,40 @@
+{
+  "entryPagePath": "page/mine/index",
+  "pages": [
+    "page/index/index",
+    "page/set/index",
+    "page/mine/index",
+    "page/mine/pages/user/user",
+    "page/mine/pages/settings/settings",
+    "page/mine/pages/form/form",
+    "page/mine/pages/about/about",
+    "page/mine/pages/ad/ad"
+  ],
+  "window": {
+    "navigationBarTitleText": "Days Matter",
+    "navigationBarTextStyle": "@navigationBarTextStyle",
+    "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+    "backgroundTextStyle": "@backgroundTextStyle",
+    "backgroundColor": "@backgroundColor"
+  },
+  "tabBar": {
+    "color": "@tabBarColor",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [{
+      "text": "首页",
+      "pagePath": "page/index/index",
+      "iconPath": "@iconPathIndex",
+      "selectedIconPath": "@selectedIconPathIndex"
+    }, {
+      "text": "我的",
+      "pagePath": "page/mine/index",
+      "iconPath": "@iconPathMine",
+      "selectedIconPath": "@selectedIconPathMine"
+    }]
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

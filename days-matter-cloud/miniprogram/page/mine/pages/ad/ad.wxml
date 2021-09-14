@@ -1,0 +1,11 @@
+<view class="container">
+
+  <view class="title">感谢支持</view>
+  <view class="top_tip">广告位内容由微信平台统一提供</view>
+  <view class="top_tip">不看广告不影响使用</view>
+
+  <view class="adContainer">
+    <ad unit-id="adunit-fd0c1afd7bdc96a9" ad-type="video" ad-theme="light"></ad>
+  </view>
+
+</view>

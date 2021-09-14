@@ -1,0 +1,7 @@
+open-data {
+  font-size: 30rpx;
+}
+
+.country, .province {
+  margin-right: 10rpx;
+}

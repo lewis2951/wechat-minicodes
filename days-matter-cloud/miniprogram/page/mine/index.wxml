@@ -1,0 +1,30 @@
+<view class="container">
+
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl" lang="zh_CN"></open-data>
+    </view>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+
+  <view class="power" wx:for="{{powerList}}" wx:key="power" wx:for-item="power">
+
+    <view wx:for="{{power.item}}" wx:key="item" wx:for-index="index" wx:for-item="item">
+      <view wx:if="{{index > 0 }}" class="line"></view>
+
+      <view class="power_item" data-page="{{item.page}}" bindtap="jumpPage">
+        <view class="power_item_title">{{item.title}}</view>
+        <image wx:if="{{theme === 'light'}}" class="power_item_icon" src="../../image/arrow.svg"></image>
+        <image wx:if="{{theme === 'dark'}}" class="power_item_icon" src="../../image/arrow_dark.svg"></image>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="adContainer">
+    <ad unit-id="adunit-deba8cdc829c83ca" ad-intervals="30"></ad>
+  </view>
+
+  <view class="foot">@2020-2021 lewis2951</view>
+
+</view>

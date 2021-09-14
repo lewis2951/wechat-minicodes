@@ -1,0 +1,41 @@
+{
+  "light": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#F6F6F6",
+
+    "tabBarColor": "#222222",
+    "tabBarBorderStyle": "white",
+    "tabBarBackgroundColor": "#F6F6F6",
+
+    "iconPathIndex": "image/icon_index.png",
+    "selectedIconPathIndex": "image/icon_index_HL.png",
+    "iconPathSet": "image/icon_set.png",
+    "selectedIconPathSet": "image/icon_set_HL.png",
+    "iconPathMine": "image/icon_mine.png",
+    "selectedIconPathMine": "image/icon_mine_HL.png",
+    "iconPathHelp": "image/icon_help.png",
+    "selectedIconPathHelp": "image/icon_help_HL.png"
+  },
+  "dark": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#111111",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#111111",
+
+    "tabBarColor": "#FFFFFF",
+    "tabBarBorderStyle": "black",
+    "tabBarBackgroundColor": "#1D1D1D",
+
+    "iconPathIndex": "image/icon_index_dark.png",
+    "selectedIconPathIndex": "image/icon_index_HL.png",
+    "iconPathSet": "image/icon_set_dark.png",
+    "selectedIconPathSet": "image/icon_set_HL.png",
+    "iconPathMine": "image/icon_mine_dark.png",
+    "selectedIconPathMine": "image/icon_mine_HL.png",
+    "iconPathHelp": "image/icon_help_dark.png",
+    "selectedIconPathHelp": "image/icon_help_HL.png"
+  }
+
+}

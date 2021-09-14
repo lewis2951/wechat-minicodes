@@ -1,0 +1,22 @@
+page {
+  padding-top: 54rpx;
+  padding-bottom: 60rpx;
+}
+
+.power {
+  width: 95%;
+  border-radius: 15rpx;
+}
+
+.line {
+  width: 95%;
+}
+
+.power_item_data {
+  width: 70%;
+  align-items: flex-start;
+}
+
+.tip {
+  opacity: 0.6;
+}

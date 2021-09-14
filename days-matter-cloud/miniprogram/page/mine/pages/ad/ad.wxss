@@ -1,0 +1,9 @@
+page {
+  padding-top: 54rpx;
+  padding-bottom: 60rpx;
+}
+
+.adContainer {
+  margin-top: 20rpx;
+  width: 100%;
+}

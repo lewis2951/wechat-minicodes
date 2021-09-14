@@ -1,0 +1,54 @@
+page {
+  padding-top: 54rpx;
+  padding-bottom: 60rpx;
+}
+
+.power {
+  width: 95%;
+  border-radius: 15rpx;
+}
+
+.line {
+  width: 95%;
+}
+
+.power_item_text {
+  display: flex;
+  flex-direction: column;
+ }
+
+.power_item_title {
+  margin-bottom: 5rpx;
+}
+
+.power_item_tip {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.power_item_before {
+  color: #70C160;
+  font-size: 60rpx;
+  font-weight: 500;
+}
+
+.power_item_after {
+  color: #C87D2F;
+  font-size: 60rpx;
+  font-weight: 500;
+}
+
+.power_item_unit {
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .power_item_tip {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .power_item_unit {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+}

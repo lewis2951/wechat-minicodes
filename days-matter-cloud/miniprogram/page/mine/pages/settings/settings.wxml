@@ -1,0 +1,28 @@
+<view class="container">
+
+  <view class="power" wx:for="{{types}}" wx:key="type" wx:for-index="index">
+
+    <view class="power_info">
+      <view class="power_info_text">
+        <image class="power_info_text_icon" src="../../../../image/calendar.png"></image>
+        <view class="power_info_text_title">{{item[1]}}</view>
+      </view>
+      <view class="power_info_tip" data-type="{{item[0]}}" data-desc="{{item[1]}}" bindtap="clearAction">清除</view>
+    </view>
+
+    <view wx:for="{{records[index]}}" wx:key="item" wx:for-index="idx" wx:for-item="item">
+      <view class="line"></view>
+
+      <view class="power_item" bindtap="removeAction" data-id="{{item._id}}">
+        <view class="power_item_title">{{item.desc}}</view>
+        <view class="power_item_tip">{{item.date}}</view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="foot flex">
+    <view class="button" bindtap="addAction">添加</view>
+  </view>
+
+</view>

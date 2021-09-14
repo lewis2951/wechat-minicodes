@@ -2,7 +2,6 @@
 
 ![License](https://img.shields.io/badge/License-Apache--2.0-brightgreen?style=flat)
 ![Platform](https://img.shields.io/badge/platform-WeChat-orange?style=flat)
-![WeUI](https://img.shields.io/badge/WeUI-v2.4.0-blue?style=flat)
 
 近期在备考 PMP ，特地开发了几个与 PMP 备考有关的微信小程序：
 

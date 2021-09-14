@@ -1,0 +1,36 @@
+<view class="container">
+
+  <view class="title">设置倒数日</view>
+
+  <view class="power">
+
+    <picker mode="selector" value="{{index}}" range="{{array}}" bindchange="changeType">
+      <view class="power_item">
+        <view class="power_item_title">类型</view>
+        <view class="power_item_data">{{array[index]}}</view>
+      </view>
+    </picker>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">{{display.desc}}</view>
+      <input class="power_item_data" placeholder="{{display.tip}}，10个字以内" value="{{record.desc}}" bindblur="changeDesc" />
+    </view>
+
+    <view class="line"></view>
+
+    <picker mode="date" value="{{record.date}}" bindchange="changeDate">
+      <view class="power_item">
+        <view class="power_item_title">日期</view>
+        <view class="power_item_data">{{record.date}}</view>
+      </view>
+    </picker>
+
+  </view>
+
+  <view class="foot">
+    <view class="button" bindtap="addAction">添加</view>
+  </view>
+
+</view>

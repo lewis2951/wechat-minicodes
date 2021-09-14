@@ -1,0 +1,39 @@
+<view class="container">
+
+  <open-data type="userAvatarUrl" lang="zh_CN"></open-data>
+
+  <view class="power">
+
+    <view class="power_item">
+      <view class="power_item_title">昵称</view>
+      <open-data type="userNickName" lang="zh_CN"></open-data>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">性别</view>
+      <open-data type="userGender" lang="zh_CN"></open-data>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">地区</view>
+      <view>
+        <open-data class="country" type="userCountry" lang="zh_CN"></open-data>
+        <open-data class="province" type="userProvince" lang="zh_CN"></open-data>
+        <open-data class="city" type="userCity" lang="zh_CN"></open-data>
+      </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">语言</view>
+      <open-data type="userLanguage" lang="zh_CN"></open-data>
+    </view>
+
+  </view>
+
+</view>

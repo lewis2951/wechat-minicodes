@@ -1,0 +1,33 @@
+<view class="container">
+
+  <view class="title">倒数日</view>
+  <view class="top_tip">追忆过往，期待未来，记录美好时刻</view>
+
+  <view class="power" wx:for="{{types}}" wx:key="type" wx:for-index="index">
+
+    <view class="power_info">
+      <view class="power_info_text">
+        <image class="power_info_text_icon" src="../../image/calendar.png"></image>
+        <view class="power_info_text_title">{{item[1]}}</view>
+      </view>
+      <view wx:if="{{item[0] != 'exam'}}" class="power_info_tip" bindtap="changeModel">切换</view>
+    </view>
+
+    <view wx:for="{{records[index]}}" wx:key="item" wx:for-index="idx" wx:for-item="item">
+      <view class="line"></view>
+
+      <view class="power_item">
+        <view class="power_item_text">
+          <view class="power_item_title">{{item.descView}}</view>
+          <view class="power_item_tip">目标日：{{item.dateView}}</view>
+        </view>
+        <view wx:if="{{item.days < 0}}" class="power_item_after">{{(item.days >= 0) ? item.days : -item.days}}<text
+            class="power_item_unit"> 天</text></view>
+        <view wx:if="{{item.days >= 0}}" class="power_item_before">{{(item.days >= 0) ? item.days : -item.days}}<text
+            class="power_item_unit"> 天</text></view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,43 @@
+<view class="container">
+
+  <image src="{{imageSrc}}"></image>
+
+  <view class="power">
+
+    <view class="power_item">
+      <view class="power_item_title">名称</view>
+      <view class="power_item_title">{{cname}}</view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">英文名</view>
+      <view class="power_item_title">{{ename}}</view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">版本号</view>
+      <view class="power_item_title">{{version}}</view>
+    </view>
+  </view>
+
+  <view class="power">
+
+    <view class="power_item">
+      <view class="power_item_title">AppID</view>
+      <view class="power_item_title">{{appId}}</view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="power_item">
+      <view class="power_item_title">开发者</view>
+      <view class="power_item_title">{{auth}}</view>
+    </view>
+
+  </view>
+
+</view>
